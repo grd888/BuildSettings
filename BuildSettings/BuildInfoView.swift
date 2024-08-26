@@ -12,8 +12,8 @@ struct BuildInfoView: View {
         List {
             VStack {
                 Section {
-                    infoRow(label: "Environment", value: "Debug")
-                    infoRow(label: "Base URL", value: "google.com", divider:  false)
+                    infoRow(label: "Environment", value: GlobalSettings.environment.rawValue)
+                    infoRow(label: "Base URL", value: GlobalSettings.baseApiPath, divider:  false)
                 } header: {
                     headerView(title: "Build Config Variables")
                 }
@@ -25,7 +25,7 @@ struct BuildInfoView: View {
                 }
                 
                 Section {
-                    infoRow(label: "Log Level", value: "Debug", divider:  false)
+                    infoRow(label: "Log Level", value: GlobalSettings.logLevel, divider:  false)
                 } header: {
                     headerView(title: "Hybrid Variables")
                 }
