@@ -21,6 +21,7 @@
 		A56B06902C7C043B007F2D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56B06932C7C043B007F2D3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A56B069A2C7C06DD007F2D3E /* BuildInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoView.swift; sourceTree = "<group>"; };
+		A56B06A02C7C16CD007F2D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		A56B068B2C7C0439007F2D3E /* BuildSettings */ = {
 			isa = PBXGroup;
 			children = (
+				A56B06A02C7C16CD007F2D3E /* Info.plist */,
 				A56B068C2C7C0439007F2D3E /* BuildSettingsApp.swift */,
 				A56B068E2C7C0439007F2D3E /* ContentView.swift */,
 				A56B069A2C7C06DD007F2D3E /* BuildInfoView.swift */,
@@ -273,14 +275,17 @@
 		A56B06982C7C043B007F2D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APP_ENVIRONMENT = dev;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://dev.appapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BuildSettings/Preview Content\"";
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuildSettings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOG_LEVEL = debug;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.gdelgado.BuildSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,12 +310,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://appapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BuildSettings/Preview Content\"";
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuildSettings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOG_LEVEL = error;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.gdelgado.BuildSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,12 +406,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://staging.appapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BuildSettings/Preview Content\"";
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuildSettings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,6 +423,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOG_LEVEL = info;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.gdelgado.BuildSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,12 +502,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://qa.appapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BuildSettings/Preview Content\"";
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuildSettings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -505,6 +519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOG_LEVEL = info;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.gdelgado.BuildSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
