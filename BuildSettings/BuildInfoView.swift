@@ -19,7 +19,7 @@ struct BuildInfoView: View {
                 }
                 
                 Section {
-                    infoRow(label: "Force Subscription State", value: "False", divider:  false)
+                    infoRow(label: "Force Subscription State", value: "\(GlobalSettings.forceSubscribedState)", divider:  false)
                 } header: {
                     headerView(title: "Environment Variables")
                 }

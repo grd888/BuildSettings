@@ -30,10 +30,34 @@ enum GlobalSettings {
         return path
     }()
     
-    static let logLevel: String = {
+    static private let logLevelBuildConfigSetting: String = {
         guard let logLevel = Bundle.main.infoDictionary!["LOG_LEVEL"]  as? String else {
             preconditionFailure("LOG_LEVEL cannot be nil")
         }
         return logLevel
     }()
+}
+
+extension GlobalSettings {
+    static var forceSubscribedState: Bool {
+        let key = "FORCE_SUBSCRIBE"
+        guard ProcessInfo.processInfo.environment.contains(where: {$0.key == key} ) else {
+            return false
+        }
+        return ProcessInfo.processInfo.environment[key] == "true"
+    }
+    
+    static private var logLevelEnvironmentVariable: String? {
+        let key = "LOG_LEVEL"
+        guard ProcessInfo.processInfo.environment.contains(where: { $0.key == key }) else {
+            return nil
+        }
+        return ProcessInfo.processInfo.environment[key]
+    }
+}
+
+extension GlobalSettings {
+    static var logLevel: String {
+        logLevelEnvironmentVariable ?? logLevelBuildConfigSetting
+    }
 }
