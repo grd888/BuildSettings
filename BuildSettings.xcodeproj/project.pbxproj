@@ -12,6 +12,7 @@
 		A56B06912C7C043B007F2D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56B06902C7C043B007F2D3E /* Assets.xcassets */; };
 		A56B06942C7C043B007F2D3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56B06932C7C043B007F2D3E /* Preview Assets.xcassets */; };
 		A56B069B2C7C06DD007F2D3E /* BuildInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56B069A2C7C06DD007F2D3E /* BuildInfoView.swift */; };
+		A56B06A22C7C1890007F2D3E /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56B06A12C7C1890007F2D3E /* GlobalSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A56B06932C7C043B007F2D3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A56B069A2C7C06DD007F2D3E /* BuildInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoView.swift; sourceTree = "<group>"; };
 		A56B06A02C7C16CD007F2D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A56B06A12C7C1890007F2D3E /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A56B069A2C7C06DD007F2D3E /* BuildInfoView.swift */,
 				A56B06902C7C043B007F2D3E /* Assets.xcassets */,
 				A56B06922C7C043B007F2D3E /* Preview Content */,
+				A56B06A12C7C1890007F2D3E /* GlobalSettings.swift */,
 			);
 			path = BuildSettings;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56B068F2C7C0439007F2D3E /* ContentView.swift in Sources */,
+				A56B06A22C7C1890007F2D3E /* GlobalSettings.swift in Sources */,
 				A56B069B2C7C06DD007F2D3E /* BuildInfoView.swift in Sources */,
 				A56B068D2C7C0439007F2D3E /* BuildSettingsApp.swift in Sources */,
 			);
