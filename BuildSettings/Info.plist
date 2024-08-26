@@ -4,5 +4,9 @@
 <dict>
 	<key>APP_ENVIRONMENT</key>
 	<string>${APP_ENVIRONMENT}</string>
+	<key>BASE_URL</key>
+	<string>${BASE_URL}</string>
+	<key>LOG_LEVEL</key>
+	<string>${LOG_LEVEL}</string>
 </dict>
 </plist>
